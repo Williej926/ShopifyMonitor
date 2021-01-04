@@ -13,24 +13,6 @@ storeUrl = ""
 def random_line(fname):
     lines = open(fname).read().splitlines()
     return random.choice(lines)
-# def getProxy():
-#     proxy = (str) (random_line("proxies.txt"))
-#     ip = proxy[:proxy.find(":")]
-#     rest = proxy[proxy.find(":")-1:]
-#     rest = rest[2:]
-#     port = rest[:rest.find(":")]
-#     rest = rest[6:]
-#     print(rest)
-
-#     user = rest[:rest.find(":")]
-#     pw = rest[rest.find(":"):]
-#     pw = pw[1:]
-#     proxyFinal = ("http://"+user+":"+pw+"@"+ip+":"+port)
-#     proxyDict = {
-#         "https": proxyFinal
-#     }
-#     print(proxyDict)
-#     return proxyDict
 
 def getProxy():
     proxy = (str) (random_line("proxies.txt"))
